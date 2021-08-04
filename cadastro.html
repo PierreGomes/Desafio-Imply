@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet">
+        <script src="./jquery.maskedinput.min.js"></script>
+        <script src="./jquery.min.js"></script>
+        <script src="./jquery.mask.js"></script>
+        <title>Cadastro</title>
+    </head>
+    
+    <body>
+
+        <main class="container">
+
+            <section id="containerHeader">
+                <h2>Cadastro de Usuário</h2>
+                <p>Utilizer esse cadastro para fazer parte do maior site de trade de Bitcoin do mundo.</p>
+            </section>
+
+            <section id="formFields">
+                
+                <div id="form">
+
+                    <form action="#">
+
+                        <div class="inputGroup">
+                            <label for="fullName">Nome Completo *</label>
+                            <input type="text" class="req" id="Nome Completo">
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="email">E-mail *</label>
+                            <input type="text" class="req">
+                        </div>
+
+                        <div class="small">
+                            <div class="inputGroup">
+                                <label for="tel">Telefone *</label>
+                                <input type="text" class="req" id="telefone" maxlength="15">
+                            </div>
+                        
+                            <div class="inputGroup">
+                                <label for="cpf">CPF *</label>
+                                <input type="text" class="req" id="cpf" maxlength="11">
+                            </div>
+
+                            <div class="inputGroup">
+                                <label for="cep">CEP *</label>
+                                <input type="text" id="cep" onblur="cepFunc()" class="req" maxlength="9">
+                            </div>
+
+                            <div class="inputGroup">
+                                <label for="city">Cidade</label>
+                                <input type="city" id="city">
+                            </div>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="district">Bairro</label>
+                            <input type="district" id="district">
+                        </div>
+
+                        <div class="small">
+                            <div class="inputGroup">
+                                <label for="logradouro">Logradouro</label>
+                                <input type="logradouro" id="logradouro">
+                            </div>
+
+                            <div class="inputGroup">
+                                <label for="houseNumber">Número</label>
+                                <input type="houseNumber" id="houseNumber" maxlength="5">
+                            </div>
+                        </div>
+    
+                        <button onclick="Modal.open()">CADASTRAR</button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="modal-overlay">
+        </div>
+
+        <footer>
+            <p>Os cookies são utilizados para facilitar a navegação e torná-la mais simples e não danificam o seu dispositivo. Permitem uma navegação mais rápida e eficiente, eliminando a necessidade de introduzir repetidamente as mesmas informações.</p>
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+   
+    
+
+</html>
